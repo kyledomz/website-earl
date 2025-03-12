@@ -9,7 +9,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:wght@600&family=Song+Myung&display=swap" rel="stylesheet">
     <style>
-
         :root {
             --background-color: #F5F5F5;
             --primary-color: #FFFFFF;
@@ -18,6 +17,18 @@
             --nav-bg-color: rgba(252, 251, 251, 0);
             --highlight-color: #355D67;
         }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            transition: all 0.3s ease;
+        }
+
         /* Base service button styling - shared properties */
         .service-btn {
             display: block;
@@ -61,12 +72,12 @@
         /* Form submit button styling */
         .service-btn-submit {
             background: #43A047;
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-    margin: 0.5rem;
-    display: inline-block !important;
-    width: auto !important;
-    min-width: 120px;
+            font-size: 1rem;
+            padding: 0.8rem 1.5rem;
+            margin: 0.5rem;
+            display: inline-block !important;
+            width: auto !important;
+            min-width: 120px;
         }
 
         .form-section {
@@ -116,31 +127,31 @@
 
         .modal-content {
             max-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-bottom: 70px; /* Make space for footer */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 70px; /* Make space for footer */
         }
 
         .modal-scroll-content {
             overflow-y: auto;
-    max-height: 65vh; /* Slightly reduce to make room */
-    padding: 0 1rem;
-    margin: 1rem 0;
+            max-height: 65vh; /* Slightly reduce to make room */
+            padding: 0 1rem;
+            margin: 1rem 0;
         }
 
-#rentSpaceModal .modal-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
+        #rentSpaceModal .modal-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
 
-/* Ensure buttons are properly centered and sized */
-.modal-footer button {
-    min-width: 120px;
-    margin: 0;
-}
+        /* Ensure buttons are properly centered and sized */
+        .modal-footer button {
+            min-width: 120px;
+            margin: 0;
+        }
 
         /* Scrollbar Styling */
         .modal-scroll-content::-webkit-scrollbar {
@@ -181,16 +192,6 @@
             position: fixed !important;
             width: 100%;
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            transition: all 0.3s ease;
-        }
 
         #socialMediaBtn {
             position: fixed;
@@ -217,6 +218,7 @@
             justify-content: center;
             align-items: center;
         }
+        
         .qr-modal-content {
             background: transparent !important;
             max-width: 90%;
@@ -269,45 +271,45 @@
         #submitBtn {
             margin: 0.5rem !important;
             display: inline-block !important;
-            
         }
-/* Base modal structure */
-.modal-base {
-    display: none;
-    position: fixed;
-    z-index: 2000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(5px);
-    justify-content: center;
-    align-items: center;
-}
+        
+        /* Base modal structure */
+        .modal-base {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            justify-content: center;
+            align-items: center;
+        }
 
-/* Make buttons the same size */
-#rentSpaceModal .close-btn,
-#rentSpaceModal .service-btn-submit {
-    height: 40px;
-    line-height: 40px;
-    padding: 0 1.5rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    width: 120px !important;
-    margin: 0.5rem;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-}
+        /* Make buttons the same size */
+        #rentSpaceModal .close-btn,
+        #rentSpaceModal .service-btn-submit {
+            height: 40px;
+            line-height: 40px;
+            padding: 0 1.5rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            width: 120px !important;
+            margin: 0.5rem;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+        }
 
         .nav-container {
             display: flex;
-    justify-content: space-between; /* Ensures logo is on the left and nav links are on the right */
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px; /* Adds padding to prevent content from touching the edges */
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
         .calendar {
@@ -363,17 +365,15 @@
 
         .logo-container {
             display: flex;
-    align-items: center;
-    gap: 10px;
-    /* No need for margin-right: auto; since justify-content: space-between handles it */
-        
-}
+            align-items: center;
+            gap: 10px;
+        }
 
-.address-under {
-    color: black;
-    font-family: 'Cinzen';
-    font-size: 20px;
-}
+        .address-under {
+            color: black;
+            font-family: 'Cinzel', sans-serif;
+            font-size: 20px;
+        }
 
         .logo-image {
             height: 50px;
@@ -400,10 +400,10 @@
 
         .nav-links {
             display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    cursor: pointer;
-    font-family: 'Cinzel', sans-serif;
+            gap: 1.5rem;
+            align-items: center;
+            cursor: pointer;
+            font-family: 'Cinzel', sans-serif;
         }
 
         .nav-links a {
@@ -416,8 +416,7 @@
         }
 
         .nav-links a:hover {
-            background: var(--highlight-color);
-            color: white;
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .hero {
@@ -429,7 +428,7 @@
             justify-content: center;
             text-align: center;
             padding: 3rem;
-            margin-top: -15px ;
+            margin-top: -15px;
         }
 
         .studio-title {
@@ -448,8 +447,6 @@
             color: #ffffff;
             font-family: 'Cinzel', sans-serif;
         }
-
-       
 
         #imageModal {
             display: none;
@@ -473,67 +470,68 @@
         }
 
         /* Close buttons styling */
-    .modal-close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 2100;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 2100;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
 
-.gallery-grid {
-    display: grid;
-  grid-template-columns: repeat(3, 1fr);  /* Three equal columns */
-  gap: 15px;  /* Space between images */
-  justify-items: center;  /* Center the images in their grid cells */
-  padding: 10px;
-  width: 100%;
-}
-
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            justify-items: center;
+            padding: 10px;
+            width: 100%;
+        }
 
         .modal-close:hover {
             color: var(--highlight-color);
         }
 
-    .gallery-grid-under {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-        overflow-x: auto;
-        background: linear-gradient(to bottom, #355D67 , #FFF3D2 ); /* Gradient background */ 
-}
-/* Update the gallery-img styling */
-.gallery-img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    flex-shrink: 0;
-    border-radius: 25px;
-    border: 2px solid rgb(255, 255, 255);
-    padding: 2px;
-    transition: transform 0.3s ease;
-}
+        .gallery-grid-under {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            overflow-x: auto;
+            background: linear-gradient(to bottom, #355D67, #FFF3D2);
+        }
+        
+        /* Update the gallery-img styling */
+        .gallery-img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border-radius: 25px;
+            border: 2px solid rgb(255, 255, 255);
+            padding: 2px;
+            transition: transform 0.3s ease;
+        }
 
-.gallery-img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
+        .gallery-img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
 
-/* Modal gallery grid - for the popup gallery view */
-#galleryModal .gallery-grid-under {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-height: 70vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
+        /* Modal gallery grid - for the popup gallery view */
+        #galleryModal .gallery-grid-under {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-height: 70vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        
         .gallery-item {
             display: flex;
             flex-direction: column;
@@ -551,15 +549,14 @@
             height: 300px;
             object-fit: cover;
             border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         /* Hover effect for images */
-.gallery-img-grid:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
-}
-
+        .gallery-img-grid:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
 
         .gallery-img {
             border: 2px solid rgb(255, 255, 255);
@@ -607,197 +604,410 @@
         }
 
         /* Close button styling */
-    .close-btn-grid {
-        background-color: #607D8B; /* Button color */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  position: fixed;  /* Position it fixed on the screen */
-  bottom: 20px;     /* 20px from the bottom of the page */
-  left: 50%;        /* Center it horizontally */
-  transform: translateX(-50%); /* Perfectly center it */
-  transition: background-color 0.3s ease;
-}
+        .close-btn-grid {
+            background-color: #607D8B;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: background-color 0.3s ease;
+        }
 
-.close-btn-grid:hover {
-  background-color: #224750;
-}
+        .close-btn-grid:hover {
+            background-color: #224750;
+        }
 
         .close-btn:hover {
             background: #224750;
         }
+        
         /* Rates modal */
         .rates-modal {
             background: rgba(0, 0, 0, 0.7);
         }
 
-.rates-modal .modal-content {
-    border-left: 5px solid #355D67;
-    max-width: 400px;
+        .rates-modal .modal-content {
+            border-left: 5px solid #355D67;
+            max-width: 400px;
+        }
+
+        .rates-modal h2 {
+            color: #355D67;
+            border-bottom: 2px solid #355D67;
+            padding-bottom: 10px;
+        }
+
+        /* Services modal */
+        .services-modal {
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        .services-modal .modal-content {
+            max-width: 500px;
+            border-radius: 15px;
+        }
+
+        .services-modal h2 {
+            color: #355D67;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery modal */
+        .gallery-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            padding: 20px;
+        }
+
+        .gallery-modal .modal-content {
+            max-width: 90%;
+            width: 900px;
+            border-radius: 20px;
+        }
+
+        .gallery-modal h2 {
+            color: #000000;
+            margin-bottom: 25px;
+            font-family: 'Cinzel', sans-serif;
+            font-size: 35px;
+        }
+
+        /* Image modal - fullscreen viewing */
+        .image-modal {
+            background: rgba(0, 0, 0, 0.9) !important;
+        }
+
+        .image-modal img {
+            max-width: 90%;
+            max-height: 90vh;
+            border: 3px solid white;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Rent space modal - form focused */
+        .rent-modal {
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        .rent-modal .modal-content {
+            max-width: 550px;
+            border-radius: 12px;
+        }
+
+        /* Content inside the modal */
+        .modal-content-gallery {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%;
+            max-height: 80%;
+            overflow: auto;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rent-modal h2 {
+            color: #355D67;
+            border-bottom: 2px solid #355D67;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-family: 'Cinzel', sans-serif;
+        }
+
+        .rent-modal .form-section {
+            background: #f9f9f9;
+        }
+
+        /* QR code modal */
+        .qr-modal {
+            background: rgba(0, 0, 0, 0.85);
+        }
+
+        .qr-modal .modal-content {
+            background: transparent !important;
+            box-shadow: none;
+        }
+
+        .qr-modal .enlarged-qr {
+            border: 4px solid white;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Container for the social media icons */
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        /* Base styles for each social icon */
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        /* Individual social media styles */
+        .social-icon.facebook {
+            background-color: #3b5998;
+        }
+
+        .social-icon.tiktok {
+            background-color: #000000;
+        }
+
+        .social-icon.instagram {
+            background-color: #E4405F;
+        }
+
+        /* Hover effect */
+        .social-icon:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+        
+        /* Mobile menu button */
+        .mobile-menu-btn {
+        display: none;
+        background: rgba(53, 93, 103, 0.8);  /* Using your highlight color with transparency */
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+        font-size: 22px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .mobile-menu-btn:hover {
+    background: var(--highlight-color);
+    transform: scale(1.05);
 }
 
-.rates-modal h2 {
-    color: #355D67;
-    border-bottom: 2px solid #355D67;
-    padding-bottom: 10px;
-}
-
-/* Services modal */
-.services-modal {
-    background: rgba(0, 0, 0, 0.75);
-}
-
-.services-modal .modal-content {
-    max-width: 500px;
-    border-radius: 15px;
-}
-
-.services-modal h2 {
-    color: #355D67;
-    margin-bottom: 20px;
+.mobile-menu-btn:active {
+    transform: scale(0.95);
 }
 
 
-/* Gallery modal */
-.gallery-modal {
-    display: none;  /* Hidden by default */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-  padding: 20px;
-}
 
-.gallery-modal .modal-content {
-    max-width: 90%;
-    width: 900px;
-    border-radius: 20px;
-}
+        
+        /* Form field styles */
+        .form-section input[type="text"],
+        .form-section input[type="email"],
+        .form-section input[type="date"],
+        .form-section input[type="time"],
+        .form-section select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
 
-.gallery-modal h2 {
-    color: #000000;
-    margin-bottom: 25px;
-    font-family: 'Cinzel', sans-serif;
-    font-size: 35px;
-}
+        /* Add responsive styles */
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .gallery-img {
+                width: 300px;
+                height: 300px;
+            }
+        }
 
-/* Image modal - fullscreen viewing */
-.image-modal {
-    background: rgba(0, 0, 0, 0.9) !important;
-}
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(53, 93, 103, 0.95);  /* Match your theme color */
+        flex-direction: column;
+        padding: 20px;
+        gap: 1rem;
+        z-index: 1001;  /* Ensure it appears above other content */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 10px 10px;
+            }
+            
+            .nav-links.active {
+                display: flex;
+                animation: fadeIn 0.3s ease;
+            }
+            
+            .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.1);
+            }
+            
+            .hero {
+                height: 70vh;
+                padding: 2rem;
+            }
+            
+            .studio-title {
+                font-size: 2.2rem;
+            }
+            
+            .studio-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .gallery-grid-under {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .gallery-img {
+                width: 90%;
+                height: auto;
+                max-height: 350px;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .time-group {
+                grid-template-columns: 1fr;
+            }
+            
+            .address-under {
+                font-size: 16px;
+            }
+            
+            .modal-content {
+                width: 95%;
+                padding: 15px;
+            }
+            
+            .calendar {
+                gap: 2px;
+            }
+            
+            .calendar-day {
+                padding: 5px;
+                font-size: 14px;
+            }
+            
+            .social-icons {
+                bottom: 10px;
+                left: 10px;
+                gap: 10px;
+            }
+            
+            .social-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+            }
+        }
 
-.image-modal img {
-    max-width: 90%;
-    max-height: 90vh;
-    border: 3px solid white;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-}
-
-/* Rent space modal - form focused */
-.rent-modal {
-    background: rgba(0, 0, 0, 0.65);
-}
-
-.rent-modal .modal-content {
-    max-width: 550px;
-    border-radius: 12px;
-}
-
-/* Content inside the modal */
-.modal-content-gallery {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 90%;
-  max-height: 80%;
-  overflow: auto;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.rent-modal h2 {
-    color: #355D67;
-    border-bottom: 2px solid #355D67;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-family: 'Cinzel', sans-serif;
-}
-
-.rent-modal .form-section {
-    background: #f9f9f9;
-}
-
-/* QR code modal */
-.qr-modal {
-    background: rgba(0, 0, 0, 0.85);
-}
-
-.qr-modal .modal-content {
-    background: transparent !important;
-    box-shadow: none;
-}
-
-.qr-modal .enlarged-qr {
-    border: 4px solid white;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
-}
-/* Container for the social media icons */
-.social-icons {
-  position: fixed;
-  bottom: 20px;  /* Distance from the bottom */
-  left: 20px;    /* Distance from the left */
-  display: flex; /* Align icons horizontally */
-  gap: 15px;     /* Space between icons */
-  z-index: 1000; /* Ensure it's on top of other content */
-}
-
-/* Base styles for each social icon */
-.social-icon {
-  width: 40px;   /* Icon size */
-  height: 40px;  /* Icon size */
-  background-color: #333; /* Default background color */
-  border-radius: 50%;  /* Make it circular */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-  text-decoration: none; /* Remove underline */
-}
-
-/* Individual social media styles */
-.social-icon.facebook {
-  background-color: #3b5998; /* Facebook color */
-}
-
-.social-icon.tiktok {
-  background-color: #000000; /* TikTok's solid black for contrast */
-}
-
-.social-icon.instagram {
-  background-color: #E4405F; /* Instagram color */
-}
-
-/* Hover effect */
-.social-icon:hover {
-  transform: scale(1.1); /* Slightly grow the icon */
-  opacity: 0.8;
-}
-
-
+        @media (max-width: 480px) {
+            header {
+                padding: 0.8rem 1rem;
+            }
+            
+            .logo-text {
+                font-size: 1.2rem;
+            }
+            
+        .mobile-menu-btn {
+                padding: 6px 10px;
+                font-size: 20px;
+            }
+    
+        .nav-links {
+                top: 70px;
+                padding: 15px;
+            }
+            .logo-image {
+                height: 40px;
+                width: 35px;
+            }
+            
+            .studio-title {
+                font-size: 1.8rem;
+            }
+            
+            .studio-subtitle {
+                font-size: 1rem;
+            }
+            
+            .service-btn {
+                font-size: 1rem;
+                padding: 0.8rem;
+            }
+            
+            .gallery-modal h2 {
+                font-size: 24px;
+            }
+            
+            .modal-close {
+                top: 10px;
+                right: 20px;
+                font-size: 30px;
+            }
+            
+            .modal-content {
+                padding: 10px;
+            }
+            
+            .modal-scroll-content {
+                max-height: 60vh;
+            }
+            
+            #rentSpaceModal .modal-footer {
+                flex-direction: column;
+            }
+            
+            .form-section {
+                padding: 0.7rem;
+            }
+            
+            .calendar-header-day {
+                font-size: 12px;
+                padding: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -807,7 +1017,10 @@
                 <img src="logo.png" alt="First Block Studio Logo" class="logo-image">
                 <a href="#" class="logo-text">First Block Studio</a>
             </div>
-            <div class="nav-links">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="navLinks">
                 <a href="#" id="servicesLink">Services</a>
                 <a id="ratesLink">Rates</a>
                 <a href="#" id="galleryLink">Gallery</a>
@@ -824,20 +1037,20 @@
     </section>
 
     <!-- Gallery Modal -->
-<div id="galleryModal" class="modal-base gallery-modal">
-    <div class="modal-content-gallery">
-        <h2>Studio Gallery</h2>
-        <div class="gallery-grid">
-            <img src="2.png" class="gallery-img-grid" onclick="openImageModal(this)">
-            <img src="4.png" class="gallery-img-grid" onclick="openImageModal(this)">
-            <img src="terms.png" class="gallery-img-grid" onclick="openImageModal(this)">
-            <img src="logo.png" class="gallery-img-grid" onclick="openImageModal(this)">
-            <img src="1.png" class="gallery-img-grid" onclick="openImageModal(this)">
-            <img src="qr-code.png" class="gallery-img-grid" onclick="openImageModal(this)">
+    <div id="galleryModal" class="modal-base gallery-modal">
+        <div class="modal-content-gallery">
+            <h2>Studio Gallery</h2>
+            <div class="gallery-grid">
+                <img src="2.png" class="gallery-img-grid" onclick="openImageModal(this)">
+                <img src="4.png" class="gallery-img-grid" onclick="openImageModal(this)">
+                <img src="terms.png" class="gallery-img-grid" onclick="openImageModal(this)">
+                <img src="logo.png" class="gallery-img-grid" onclick="openImageModal(this)">
+                <img src="1.png" class="gallery-img-grid" onclick="openImageModal(this)">
+                <img src="qr-code.png" class="gallery-img-grid" onclick="openImageModal(this)">
+            </div>
+            <button class="close-btn-grid" onclick="closeGalleryModal()">Close</button>
         </div>
-        <button class="close-btn-grid" onclick="closeGalleryModal()">Close</button>
     </div>
-</div>
 
     <section class="studio-gallery">
         <div class="gallery-grid-under">
@@ -848,7 +1061,7 @@
     </section>
 
     <footer>
-        <p class="address-under">
+        <p class="address-under"> 
             2nd Floor of The Hub Mayon, 18 Mayon St, 1114 Metro Manila
             <br>First Block Studios © 2024
         </p>
@@ -998,6 +1211,24 @@
         // Global Variables
         let currentDate = new Date();
         let bookedSlots = [];
+
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        // Toggle mobile menu on button click
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close menu when clicking a link (optional, for better UX)
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
 
         // Calendar Functions
         function showCalendar() {
